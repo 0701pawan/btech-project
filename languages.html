@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>AQM</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">AQM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container  align-items-centre">
+        <div class="row featurette m-4 ">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">AQM. <span class="text-muted">Air Quality Managmet<br><br></span>
+               
+                    <p><b>Hardware part</b></p><p><b>DHT11</b> sensor which is a temperature and humidity sensor, the data part of it is connected to the A0 pin of the Arduino.</p><p><b>MQ135</b> which sense gases like smoke, NOx, CO2, The data pin of the MQ135&nbsp; sensor is connected to the A1 pin of Arduino.</p><p><b>MQ2 </b>is used to sense smoke and methane . The data pin of the sensor is connected to the A2 pin of the Arduino.</p><p>After fetching the data from the sensors the data value is converted into JSON format so that it can be transferred to NODEMCU using serial communication.</p><p>5,6 pins of the Arduino is connected to the RX, TX pins of NODE MCU.</p><p>Node MCU is used to push data in the server.</p><p>In our project, we have used thingspeak server to show data in graphical form.</p><p><b>Software part</b></p><p>Data that<b>&nbsp;</b>is pushed on the server is used to visualize the data.</p><p>The website is created on which data is visualized.</p><p>The website is created using <b>HTML</b>,<b>CSS,Javascript&amp;Mapbox</b></p><p>It shows all the data of the different sensors using the website.</p><p>It has also a voice function that will be integrated into the website.</p><p><br /></p><p><b><br /></b></p>
+            </div>
+            <div class="col-md-5">
+                <img src="images.png" width="100%">
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <hr class="featurette-divider">
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 Codepoet, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
