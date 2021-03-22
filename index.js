@@ -12,7 +12,7 @@ function updateMap()
          console.log(longitude)
          console.log(rsp.feeds[0].field1)
          ppm = rsp.feeds[0].field5;
-                if (ppm>=0 && ppm<=50) {
+                /*if (ppm>=0 && ppm<=50) {                       Standard Values
                     color = 'rgb(0, 255, 0)';
                 }
                 else if(ppm>=51 && ppm<=100){
@@ -30,9 +30,27 @@ function updateMap()
                 }
                 else if(ppm>430){
                     color = 'rgb(51, 10, 0)';
+                }*/
+                if (ppm>=0 && ppm<=10) {                       
+                    color = 'rgb(0, 255, 0)';
                 }
-
-
+                else if(ppm>=11 && ppm<=20){
+                    color = 'rgb(0, 153, 51)'
+                }
+               
+                else if(ppm>=21 && ppm<=30){
+                    color = 'rgb(255, 255, 0)'
+                }
+                else if(ppm>=31 && ppm<=40){
+                    color = 'rgb(255, 128, 0)'
+                }
+                else if(ppm>=41 && ppm<=50){
+                    color = 'rgb(255, 0, 0)'
+                }
+                else if(ppm>51){
+                    color = 'rgb(51, 10, 0)';
+                }
+        
         
          new mapboxgl.Marker({
             draggable: false,

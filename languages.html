@@ -26,7 +26,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">Map</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
@@ -44,12 +46,14 @@
         <div class="row featurette m-4 ">
             <div class="col-md-7">
                 <h2 class="featurette-heading">AQM. <span class="text-muted">Air Quality Managmet<br><br></span>
-               
-                    <p><b>Hardware part</b></p><p><b>DHT11</b> sensor which is a temperature and humidity sensor, the data part of it is connected to the A0 pin of the Arduino.</p><p><b>MQ135</b> which sense gases like smoke, NOx, CO2, The data pin of the MQ135&nbsp; sensor is connected to the A1 pin of Arduino.</p><p><b>MQ2 </b>is used to sense smoke and methane . The data pin of the sensor is connected to the A2 pin of the Arduino.</p><p>After fetching the data from the sensors the data value is converted into JSON format so that it can be transferred to NODEMCU using serial communication.</p><p>5,6 pins of the Arduino is connected to the RX, TX pins of NODE MCU.</p><p>Node MCU is used to push data in the server.</p><p>In our project, we have used thingspeak server to show data in graphical form.</p><p><b>Software part</b></p><p>Data that<b>&nbsp;</b>is pushed on the server is used to visualize the data.</p><p>The website is created on which data is visualized.</p><p>The website is created using <b>HTML</b>,<b>CSS,Javascript&amp;Mapbox</b></p><p>It shows all the data of the different sensors using the website.</p><p>It has also a voice function that will be integrated into the website.</p><p><br /></p><p><b><br /></b></p>
+                    
+                    <p><b>Hardware part</b><br><br><div class="col-md-9">
+                        <img src="hardware.jpeg" width="100%">
+                    </div> <br></p><p><b>DHT11</b> sensor which is a temperature and humidity sensor, the data part of it is connected to the A0 pin of the Arduino.</p><p><b>MQ135</b> which sense gases like smoke, NOx, CO2, The data pin of the MQ135&nbsp; sensor is connected to the A1 pin of Arduino.</p><p><b>MQ2 </b>is used to sense smoke and methane . The data pin of the sensor is connected to the A2 pin of the Arduino.</p><p>After fetching the data from the sensors the data value is converted into JSON format so that it can be transferred to NODEMCU using serial communication.</p><p>5,6 pins of the Arduino is connected to the RX, TX pins of NODE MCU.</p><p>Node MCU is used to push data in the server.</p><p>In our project, we have used thingspeak server to show data in graphical form.<br><br></p><p><b>Software part</b><br><div class="col-md-9">
+                        <img src="software.png" width="100%">
+                    </div><br></p><p>Data that<b>&nbsp;</b>is pushed on the server is used to visualize the data.</p><p>The website is created on which data is visualized.</p><p>The website is created using <b>HTML</b>,<b>CSS,Javascript&amp;Mapbox</b></p><p>It shows all the data of the different sensors using the website.</p><p>It has also a voice function that will be integrated into the website.</p><p><br /></p><p><b><br /></b></p>
             </div>
-            <div class="col-md-5">
-                <img src="images.png" width="100%">
-            </div>
+            
         </div>
         
         
